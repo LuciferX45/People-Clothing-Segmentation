@@ -39,21 +39,7 @@ The code has been tested with the following dependencies:
    pip install -r requirements.txt
    ```
 
-4. Download the "People Clothing Segmentation" dataset from Kaggle and extract it
-5. Update the `DATASET_PATH` variable in the script to point to your dataset location
-
-## Project Structure
-
-```
-.
-├── clothing_segmentation.py  # Main script
-├── requirements.txt          # Dependencies
-├── README.md                 # This file
-└── people_clothing_segmentation/
-    ├── images/               # 1000 images
-    ├── masks/                # 1000 segmentation masks
-    └── classes.csv           # List of 59 classes
-```
+4. Downloading of the "People Clothing Segmentation" dataset happens directly via KaggleHub Python Library
 
 ## Model Architecture
 
@@ -69,7 +55,7 @@ The implementation uses a U-Net architecture which is well-suited for semantic s
 To train and evaluate the model:
 
 ```bash
-python clothing_segmentation.py
+python main.py
 ```
 
 The script will:
